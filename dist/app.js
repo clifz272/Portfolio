@@ -1,19 +1,18 @@
 const root = document.documentElement;
 const colorPreference = window.matchMedia('(prefers-color-scheme: dark)');
-const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
 const themeButton = document.querySelector('.theme-toggle');
-const currentTheme = () => root.dataset.theme || (colorPreference.matches ? 'dark' : 'light');
+const currentTheme = () => root.dataset.theme || 'dark';
 function updateThemeButton() {
   const nextTheme = currentTheme() === 'dark' ? 'light' : 'dark';
   themeButton.textContent = `${nextTheme === 'dark' ? 'Dark' : 'Light'} mode`;
   themeButton.setAttribute('aria-label', `Switch to ${nextTheme} mode`);
-  document.querySelector('meta[name="theme-color"]').content = currentTheme() === 'dark' ? '#171e19' : '#f7f8f4';
+  document.querySelector('meta[name="theme-color"]').content = currentTheme() === 'dark' ? '#0b1020' : '#f2f5fb';
 }
 updateThemeButton();
 themeButton.addEventListener('click', () => {
   const nextTheme = currentTheme() === 'dark' ? 'light' : 'dark';
   root.dataset.theme = nextTheme;
-  try { localStorage.setItem('clifton-theme', nextTheme); } catch {}
+  try { localStorage.setItem('clifton-galaxy-theme', nextTheme); } catch {}
   updateThemeButton();
 });
 colorPreference.addEventListener('change', updateThemeButton);
@@ -30,15 +29,6 @@ navigation.addEventListener('click', event => { if (event.target.closest('a')) c
 document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
 document.addEventListener('click', event => { if (!event.target.closest('.navigation')) closeMenu(); });
 
-// Reveal content in reading order. The page stays visible without JavaScript or under reduced motion.
-if (!motionPreference.matches && 'IntersectionObserver' in window) {
-  root.classList.add('js-motion');
-  const revealObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } });
-  }, { threshold: 0.08 });
-  document.querySelectorAll('.reveal').forEach(element => revealObserver.observe(element));
-  motionPreference.addEventListener('change', event => { if (event.matches) { root.classList.remove('js-motion'); revealObserver.disconnect(); } });
-}
 if ('IntersectionObserver' in window) {
   const sectionObserver = new IntersectionObserver(entries => {
     for (const entry of entries) if (entry.isIntersecting) {
@@ -48,7 +38,7 @@ if ('IntersectionObserver' in window) {
       });
     }
   }, { rootMargin: '-15% 0px -45% 0px', threshold: 0 });
-  document.querySelectorAll('main section[id]').forEach(section => sectionObserver.observe(section));
+  document.querySelectorAll('main section').forEach(section => sectionObserver.observe(section));
 }
 
 const email = '2503193@sit.singaporetech.edu.sg';
@@ -76,6 +66,11 @@ function textElement(tag, className, value) {
   element.textContent = value;
   return element;
 }
+function actionIcon() {
+  const icon = document.createElement('img');
+  icon.className = 'icon'; icon.src = 'assets/icons/arrow-up-right.svg'; icon.alt = ''; icon.width = 20; icon.height = 20;
+  return icon;
+}
 function safeUrl(value, allowLocal = false) {
   if (typeof value !== 'string' || !value.trim()) return null;
   try {
@@ -99,7 +94,7 @@ function openProject(project) {
   if (project.summary) dialogContent.append(textElement('p', '', project.summary));
   if (project.details) dialogContent.append(textElement('p', '', project.details));
   const url = safeUrl(project.url);
-  if (url) { const link = textElement('a', 'button primary', 'Visit project ↗'); link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer'; dialogContent.append(link); }
+  if (url) { const link = textElement('a', 'button primary', 'Visit project'); link.append(actionIcon()); link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer'; dialogContent.append(link); }
   projectDialog.showModal();
 }
 document.querySelector('.dialog-close').addEventListener('click', () => projectDialog.close());
@@ -121,8 +116,8 @@ async function loadProjects() {
       if (project.summary) card.append(textElement('p', '', project.summary));
       if (Array.isArray(project.tags)) { const tags = document.createElement('ul'); tags.className = 'project-tags'; tags.setAttribute('aria-label', 'Technologies used'); project.tags.forEach(tag => tags.append(textElement('li', '', String(tag)))); card.append(tags); }
       const url = safeUrl(project.url);
-      if (project.details) { const button = textElement('button', 'text-link', 'Read project ↗'); button.type = 'button'; button.addEventListener('click', () => openProject(project)); card.append(button); }
-      else if (url) { const link = textElement('a', 'text-link', 'Visit project ↗'); link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer'; card.append(link); }
+      if (project.details) { const button = textElement('button', 'text-link', 'Read project'); button.append(actionIcon()); button.type = 'button'; button.addEventListener('click', () => openProject(project)); card.append(button); }
+      else if (url) { const link = textElement('a', 'text-link', 'Visit project'); link.append(actionIcon()); link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer'; card.append(link); }
       grid.append(card);
     }
     projectArea.replaceChildren(grid);

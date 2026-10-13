@@ -1,0 +1,555 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-13T09:55:20.919Z",
+  "title": "Design System: Clifton Ng — Quiet Galaxy",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Midnight paper",
+        "tonalRamp": [
+          "oklch(15.00% 0.0341 269.56)",
+          "oklch(26.43% 0.0341 269.56)",
+          "oklch(37.86% 0.0341 269.56)",
+          "oklch(49.29% 0.0341 269.56)",
+          "oklch(60.71% 0.0341 269.56)",
+          "oklch(72.14% 0.0341 269.56)",
+          "oklch(83.57% 0.0341 269.56)",
+          "oklch(95.00% 0.0341 269.56)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Raised midnight tone",
+        "tonalRamp": [
+          "oklch(15.00% 0.0376 265.17)",
+          "oklch(26.43% 0.0376 265.17)",
+          "oklch(37.86% 0.0376 265.17)",
+          "oklch(49.29% 0.0376 265.17)",
+          "oklch(60.71% 0.0376 265.17)",
+          "oklch(72.14% 0.0376 265.17)",
+          "oklch(83.57% 0.0376 265.17)",
+          "oklch(95.00% 0.0376 265.17)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Lunar text",
+        "tonalRamp": [
+          "oklch(15.00% 0.0133 262.38)",
+          "oklch(26.43% 0.0133 262.38)",
+          "oklch(37.86% 0.0133 262.38)",
+          "oklch(49.29% 0.0133 262.38)",
+          "oklch(60.71% 0.0133 262.38)",
+          "oklch(72.14% 0.0133 262.38)",
+          "oklch(83.57% 0.0133 262.38)",
+          "oklch(95.00% 0.0133 262.38)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Blue-gray secondary text",
+        "tonalRamp": [
+          "oklch(15.00% 0.0318 260.69)",
+          "oklch(26.43% 0.0318 260.69)",
+          "oklch(37.86% 0.0318 260.69)",
+          "oklch(49.29% 0.0318 260.69)",
+          "oklch(60.71% 0.0318 260.69)",
+          "oklch(72.14% 0.0318 260.69)",
+          "oklch(83.57% 0.0318 260.69)",
+          "oklch(95.00% 0.0318 260.69)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Periwinkle action",
+        "tonalRamp": [
+          "oklch(15.00% 0.0884 269.44)",
+          "oklch(26.43% 0.0884 269.44)",
+          "oklch(37.86% 0.0884 269.44)",
+          "oklch(49.29% 0.0884 269.44)",
+          "oklch(60.71% 0.0884 269.44)",
+          "oklch(72.14% 0.0884 269.44)",
+          "oklch(83.57% 0.0884 269.44)",
+          "oklch(95.00% 0.0884 269.44)"
+        ]
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "Pale periwinkle response",
+        "tonalRamp": [
+          "oklch(15.00% 0.0641 272.39)",
+          "oklch(26.43% 0.0641 272.39)",
+          "oklch(37.86% 0.0641 272.39)",
+          "oklch(49.29% 0.0641 272.39)",
+          "oklch(60.71% 0.0641 272.39)",
+          "oklch(72.14% 0.0641 272.39)",
+          "oklch(83.57% 0.0641 272.39)",
+          "oklch(95.00% 0.0641 272.39)"
+        ]
+      },
+      "accent-text": {
+        "role": "primary",
+        "displayName": "Deep action ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.0548 265.58)",
+          "oklch(26.43% 0.0548 265.58)",
+          "oklch(37.86% 0.0548 265.58)",
+          "oklch(49.29% 0.0548 265.58)",
+          "oklch(60.71% 0.0548 265.58)",
+          "oklch(72.14% 0.0548 265.58)",
+          "oklch(83.57% 0.0548 265.58)",
+          "oklch(95.00% 0.0548 265.58)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Fine blue divider",
+        "tonalRamp": [
+          "oklch(15.00% 0.0454 263.69)",
+          "oklch(26.43% 0.0454 263.69)",
+          "oklch(37.86% 0.0454 263.69)",
+          "oklch(49.29% 0.0454 263.69)",
+          "oklch(60.71% 0.0454 263.69)",
+          "oklch(72.14% 0.0454 263.69)",
+          "oklch(83.57% 0.0454 263.69)",
+          "oklch(95.00% 0.0454 263.69)"
+        ]
+      },
+      "pill": {
+        "role": "neutral",
+        "displayName": "Blue chip tone",
+        "tonalRamp": [
+          "oklch(15.00% 0.0519 263.18)",
+          "oklch(26.43% 0.0519 263.18)",
+          "oklch(37.86% 0.0519 263.18)",
+          "oklch(49.29% 0.0519 263.18)",
+          "oklch(60.71% 0.0519 263.18)",
+          "oklch(72.14% 0.0519 263.18)",
+          "oklch(83.57% 0.0519 263.18)",
+          "oklch(95.00% 0.0519 263.18)"
+        ]
+      },
+      "orbit": {
+        "role": "neutral",
+        "displayName": "Orbital blue",
+        "tonalRamp": [
+          "oklch(15.00% 0.0959 269.10)",
+          "oklch(26.43% 0.0959 269.10)",
+          "oklch(37.86% 0.0959 269.10)",
+          "oklch(49.29% 0.0959 269.10)",
+          "oklch(60.71% 0.0959 269.10)",
+          "oklch(72.14% 0.0959 269.10)",
+          "oklch(83.57% 0.0959 269.10)",
+          "oklch(95.00% 0.0959 269.10)"
+        ]
+      },
+      "planet-light": {
+        "role": "neutral",
+        "displayName": "Lit planet tone",
+        "tonalRamp": [
+          "oklch(15.00% 0.0818 262.08)",
+          "oklch(26.43% 0.0818 262.08)",
+          "oklch(37.86% 0.0818 262.08)",
+          "oklch(49.29% 0.0818 262.08)",
+          "oklch(60.71% 0.0818 262.08)",
+          "oklch(72.14% 0.0818 262.08)",
+          "oklch(83.57% 0.0818 262.08)",
+          "oklch(95.00% 0.0818 262.08)"
+        ]
+      },
+      "planet-dark": {
+        "role": "neutral",
+        "displayName": "Shaded planet tone",
+        "tonalRamp": [
+          "oklch(15.00% 0.0363 267.99)",
+          "oklch(26.43% 0.0363 267.99)",
+          "oklch(37.86% 0.0363 267.99)",
+          "oklch(49.29% 0.0363 267.99)",
+          "oklch(60.71% 0.0363 267.99)",
+          "oklch(72.14% 0.0363 267.99)",
+          "oklch(83.57% 0.0363 267.99)",
+          "oklch(95.00% 0.0363 267.99)"
+        ]
+      },
+      "paper-light": {
+        "role": "neutral",
+        "displayName": "Cool paper",
+        "tonalRamp": [
+          "oklch(15.00% 0.0086 264.52)",
+          "oklch(26.43% 0.0086 264.52)",
+          "oklch(37.86% 0.0086 264.52)",
+          "oklch(49.29% 0.0086 264.52)",
+          "oklch(60.71% 0.0086 264.52)",
+          "oklch(72.14% 0.0086 264.52)",
+          "oklch(83.57% 0.0086 264.52)",
+          "oklch(95.00% 0.0086 264.52)"
+        ]
+      },
+      "surface-light": {
+        "role": "neutral",
+        "displayName": "Pale blue surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.0158 266.28)",
+          "oklch(26.43% 0.0158 266.28)",
+          "oklch(37.86% 0.0158 266.28)",
+          "oklch(49.29% 0.0158 266.28)",
+          "oklch(60.71% 0.0158 266.28)",
+          "oklch(72.14% 0.0158 266.28)",
+          "oklch(83.57% 0.0158 266.28)",
+          "oklch(95.00% 0.0158 266.28)"
+        ]
+      },
+      "text-light": {
+        "role": "neutral",
+        "displayName": "Dark blue text",
+        "tonalRamp": [
+          "oklch(15.00% 0.0524 261.98)",
+          "oklch(26.43% 0.0524 261.98)",
+          "oklch(37.86% 0.0524 261.98)",
+          "oklch(49.29% 0.0524 261.98)",
+          "oklch(60.71% 0.0524 261.98)",
+          "oklch(72.14% 0.0524 261.98)",
+          "oklch(83.57% 0.0524 261.98)",
+          "oklch(95.00% 0.0524 261.98)"
+        ]
+      },
+      "muted-light": {
+        "role": "neutral",
+        "displayName": "Slate secondary text",
+        "tonalRamp": [
+          "oklch(15.00% 0.0493 258.33)",
+          "oklch(26.43% 0.0493 258.33)",
+          "oklch(37.86% 0.0493 258.33)",
+          "oklch(49.29% 0.0493 258.33)",
+          "oklch(60.71% 0.0493 258.33)",
+          "oklch(72.14% 0.0493 258.33)",
+          "oklch(83.57% 0.0493 258.33)",
+          "oklch(95.00% 0.0493 258.33)"
+        ]
+      },
+      "accent-light": {
+        "role": "primary",
+        "displayName": "Blue action",
+        "tonalRamp": [
+          "oklch(15.00% 0.1314 262.38)",
+          "oklch(26.43% 0.1314 262.38)",
+          "oklch(37.86% 0.1314 262.38)",
+          "oklch(49.29% 0.1314 262.38)",
+          "oklch(60.71% 0.1314 262.38)",
+          "oklch(72.14% 0.1314 262.38)",
+          "oklch(83.57% 0.1314 262.38)",
+          "oklch(95.00% 0.1314 262.38)"
+        ]
+      },
+      "accent-hover-light": {
+        "role": "primary",
+        "displayName": "Deeper blue response",
+        "tonalRamp": [
+          "oklch(15.00% 0.1066 258.71)",
+          "oklch(26.43% 0.1066 258.71)",
+          "oklch(37.86% 0.1066 258.71)",
+          "oklch(49.29% 0.1066 258.71)",
+          "oklch(60.71% 0.1066 258.71)",
+          "oklch(72.14% 0.1066 258.71)",
+          "oklch(83.57% 0.1066 258.71)",
+          "oklch(95.00% 0.1066 258.71)"
+        ]
+      },
+      "accent-text-light": {
+        "role": "primary",
+        "displayName": "Pale action ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.0070 268.55)",
+          "oklch(26.43% 0.0070 268.55)",
+          "oklch(37.86% 0.0070 268.55)",
+          "oklch(49.29% 0.0070 268.55)",
+          "oklch(60.71% 0.0070 268.55)",
+          "oklch(72.14% 0.0070 268.55)",
+          "oklch(83.57% 0.0070 268.55)",
+          "oklch(95.00% 0.0070 268.55)"
+        ]
+      },
+      "line-light": {
+        "role": "neutral",
+        "displayName": "Light blue divider",
+        "tonalRamp": [
+          "oklch(15.00% 0.0310 260.70)",
+          "oklch(26.43% 0.0310 260.70)",
+          "oklch(37.86% 0.0310 260.70)",
+          "oklch(49.29% 0.0310 260.70)",
+          "oklch(60.71% 0.0310 260.70)",
+          "oklch(72.14% 0.0310 260.70)",
+          "oklch(83.57% 0.0310 260.70)",
+          "oklch(95.00% 0.0310 260.70)"
+        ]
+      },
+      "pill-light": {
+        "role": "neutral",
+        "displayName": "Pale blue chip tone",
+        "tonalRamp": [
+          "oklch(15.00% 0.0221 263.19)",
+          "oklch(26.43% 0.0221 263.19)",
+          "oklch(37.86% 0.0221 263.19)",
+          "oklch(49.29% 0.0221 263.19)",
+          "oklch(60.71% 0.0221 263.19)",
+          "oklch(72.14% 0.0221 263.19)",
+          "oklch(83.57% 0.0221 263.19)",
+          "oklch(95.00% 0.0221 263.19)"
+        ]
+      },
+      "orbit-light": {
+        "role": "neutral",
+        "displayName": "Light-mode orbital blue",
+        "tonalRamp": [
+          "oklch(15.00% 0.0801 265.85)",
+          "oklch(26.43% 0.0801 265.85)",
+          "oklch(37.86% 0.0801 265.85)",
+          "oklch(49.29% 0.0801 265.85)",
+          "oklch(60.71% 0.0801 265.85)",
+          "oklch(72.14% 0.0801 265.85)",
+          "oklch(83.57% 0.0801 265.85)",
+          "oklch(95.00% 0.0801 265.85)"
+        ]
+      },
+      "planet-light-light": {
+        "role": "neutral",
+        "displayName": "Light-mode lit planet tone",
+        "tonalRamp": [
+          "oklch(15.00% 0.0525 265.84)",
+          "oklch(26.43% 0.0525 265.84)",
+          "oklch(37.86% 0.0525 265.84)",
+          "oklch(49.29% 0.0525 265.84)",
+          "oklch(60.71% 0.0525 265.84)",
+          "oklch(72.14% 0.0525 265.84)",
+          "oklch(83.57% 0.0525 265.84)",
+          "oklch(95.00% 0.0525 265.84)"
+        ]
+      },
+      "planet-dark-light": {
+        "role": "neutral",
+        "displayName": "Light-mode shaded planet tone",
+        "tonalRamp": [
+          "oklch(15.00% 0.0162 262.75)",
+          "oklch(26.43% 0.0162 262.75)",
+          "oklch(37.86% 0.0162 262.75)",
+          "oklch(49.29% 0.0162 262.75)",
+          "oklch(60.71% 0.0162 262.75)",
+          "oklch(72.14% 0.0162 262.75)",
+          "oklch(83.57% 0.0162 262.75)",
+          "oklch(95.00% 0.0162 262.75)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Large name; phone and tablet size overrides are documented in Layout and Typography."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Main section headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Subsection headings, with documented experience and education variants."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Global reading base."
+      },
+      "section-body": {
+        "displayName": "Section body",
+        "purpose": "Recurring section copy."
+      },
+      "tagline": {
+        "displayName": "Tagline",
+        "purpose": "Soft accent line below the name."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Filled action text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Dates, metadata chips, footer text, and small controls."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "duration",
+        "value": ".25s",
+        "purpose": "Shared control state-transition duration."
+      },
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Navigation underline, action transform, disclosure affordance, and hero settle."
+      },
+      {
+        "name": "text-link-underline",
+        "value": ".2s",
+        "purpose": "Underline-color change on text-link hover."
+      },
+      {
+        "name": "hero-heading-settle",
+        "value": ".8s",
+        "purpose": "Hero heading only: opacity .8 to 1 and translateY 8px to 0 when motion is allowed."
+      },
+      {
+        "name": "hero-introduction-settle",
+        "value": ".9s",
+        "purpose": "Hero introduction only: the same settle. Reading sections remain stationary."
+      },
+      {
+        "name": "orbit-drift",
+        "value": "60s linear infinite",
+        "purpose": "One orbital revolution. Manual pause freezes it; reduced-motion preference removes animation."
+      },
+      {
+        "name": "canvas-paint-cap",
+        "value": "30fps / 24fps below 768px",
+        "purpose": "Deterministic 125-star / 48-star sky, DPR capped at 1.5; canvas stops when hidden or outside the viewport."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation:none; transition:none; scroll-behavior:auto",
+        "purpose": "Static sky and disabled Motion off control. User sky pause is persisted separately from theme."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet-max",
+        "value": "1023px"
+      },
+      {
+        "name": "phone-max",
+        "value": "767px"
+      },
+      {
+        "name": "narrow-phone-max",
+        "value": "389px"
+      },
+      {
+        "name": "short-landscape-width-max",
+        "value": "900px"
+      },
+      {
+        "name": "short-landscape-height-max",
+        "value": "520px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Filled résumé/contact action; inherited CSS variables bind both shipped themes.",
+      "html": "<a class=\"ds-primary\" href=\"#resume\">Download résumé <svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2\"/><path d=\"M7 11l5 5 5-5M12 4v12\"/></svg></a>",
+      "css": ".ds-primary{font-family:Manrope,Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:23px;min-height:50px;padding:13px 23px;font-size:14px;line-height:1.5;font-weight:600;border-radius:999px;white-space:nowrap;text-decoration:none;background:var(--accent,#a9befa);color:var(--accent-text,#101b36);transition:background var(--duration,.25s),transform var(--duration,.25s) var(--ease,cubic-bezier(.16,1,.3,1))}.ds-primary:hover{background:var(--accent-hover,#c5d2ff);transform:translateY(-2px)}.ds-primary:active{transform:scale(.98)}.ds-primary:focus-visible,.ds-link:focus-visible,.ds-toggle:focus-visible,.ds-nav a:focus-visible,.ds-summary:focus-visible,.ds-motion:focus-visible{outline:2px solid var(--accent,#a9befa);outline-offset:5px}@media(max-width:767px){.ds-primary{font-size:13px;gap:17px;padding-inline:20px}}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+    },
+    {
+      "name": "Text action",
+      "kind": "button",
+      "refersTo": "text-link",
+      "description": "Accent link with an underline on hover and a generous minimum target height.",
+      "html": "<a class=\"ds-link\" href=\"#projects\">View projects <svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M17 7 7 17M8 7h9v9\"/></svg></a>",
+      "css": ".ds-link{font-family:Manrope,Arial,sans-serif;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:6px 0;font-size:14px;line-height:1.5;color:var(--accent,#a9befa);text-decoration:underline;text-decoration-color:transparent;text-underline-offset:6px;transition:text-decoration-color .2s}.ds-link:hover{text-decoration-color:currentColor}.ds-primary:focus-visible,.ds-link:focus-visible,.ds-toggle:focus-visible,.ds-nav a:focus-visible,.ds-summary:focus-visible,.ds-motion:focus-visible{outline:2px solid var(--accent,#a9befa);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-link{transition:none}}"
+    },
+    {
+      "name": "Theme control",
+      "kind": "button",
+      "refersTo": "theme-toggle",
+      "description": "Outlined pill; label names the destination mode. Persistence belongs to app.js.",
+      "html": "<button class=\"ds-toggle\" type=\"button\" aria-label=\"Switch to light mode\">Light mode</button>",
+      "css": ".ds-toggle{font-family:Manrope,Arial,sans-serif;min-height:44px;padding:8px 15px;font-size:12px;line-height:1.75;white-space:nowrap;background:transparent;color:var(--text,#e7ecf5);border:1px solid var(--line,#2c3850);border-radius:999px;cursor:pointer;transition:background var(--duration,.25s)}.ds-toggle:hover{background:var(--surface,#11192b)}.ds-primary:focus-visible,.ds-link:focus-visible,.ds-toggle:focus-visible,.ds-nav a:focus-visible,.ds-summary:focus-visible,.ds-motion:focus-visible{outline:2px solid var(--accent,#a9befa);outline-offset:5px}@media(max-width:767px){.ds-toggle{font-size:11px;padding-inline:12px}}@media(prefers-reduced-motion:reduce){.ds-toggle{transition:none}}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "navigation-link",
+      "description": "Desktop link row, with the expanded phone menu layout shown at phone widths.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#about\" aria-current=\"location\">About</a><a href=\"#projects\">Projects</a><a href=\"#experience\">Experience</a><a href=\"#contact\">Contact</a></nav>",
+      "css": ".ds-nav{font-family:Manrope,Arial,sans-serif;display:flex;align-items:center;gap:26px}.ds-nav a{display:flex;align-items:center;min-height:44px;font-size:13px;line-height:1.75;color:var(--muted,#a2aec2);position:relative;text-decoration:none}.ds-nav a::after{content:'';position:absolute;bottom:7px;left:0;right:0;height:1px;background:var(--accent,#a9befa);transform:scaleX(0);transform-origin:left;transition:transform var(--duration,.25s) var(--ease,cubic-bezier(.16,1,.3,1))}.ds-nav a:hover,.ds-nav a[aria-current='location']{color:var(--text,#e7ecf5)}.ds-nav a:hover::after,.ds-nav a[aria-current='location']::after{transform:scaleX(1)}.ds-primary:focus-visible,.ds-link:focus-visible,.ds-toggle:focus-visible,.ds-nav a:focus-visible,.ds-summary:focus-visible,.ds-motion:focus-visible{outline:2px solid var(--accent,#a9befa);outline-offset:5px}@media(max-width:767px){.ds-nav{display:grid;grid-template-columns:1fr 1fr;gap:8px 16px;background:var(--paper,#0b1020);border-bottom:1px solid var(--line,#2c3850);padding:16px 20px}.ds-nav a{font-size:15px;padding:10px 8px;min-height:48px}.ds-nav a::after{display:none}}@media(prefers-reduced-motion:reduce){.ds-nav a::after{transition:none}}"
+    },
+    {
+      "name": "Skill chips",
+      "kind": "chip",
+      "refersTo": "skill-chip",
+      "description": "Static, wrapping metadata pills; these are not filter or selection controls.",
+      "html": "<ul class=\"ds-chips\" aria-label=\"Technical skills\"><li>Python</li><li>C++</li><li>TCP/IP</li><li>Electronic circuits</li></ul>",
+      "css": ".ds-chips{font-family:Manrope,Arial,sans-serif;display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}.ds-chips li{background:var(--pill,#192640);color:var(--accent,#a9befa);padding:5px 13px;border-radius:999px;font-size:12px;line-height:1.75}"
+    },
+    {
+      "name": "Projects empty state",
+      "kind": "card",
+      "refersTo": "empty-projects",
+      "description": "The shipped project state is empty; this panel communicates that without invented projects.",
+      "html": "<div class=\"ds-empty\"><div><h3>A little more to come.</h3><p>Project stories will be added here soon.</p></div></div>",
+      "css": ".ds-empty{font-family:Manrope,Arial,sans-serif;min-height:180px;padding:35px;display:flex;align-items:center;border-radius:16px;background:var(--surface,#11192b);color:var(--text,#e7ecf5)}.ds-empty h3{margin:0;font-size:19px;line-height:1.25;font-weight:600;letter-spacing:-.02em}.ds-empty p{margin:8px 0 0;font-size:14px;line-height:1.75;color:var(--muted,#a2aec2)}@media(max-width:767px){.ds-empty{min-height:155px;padding:26px}.ds-empty h3{font-size:17px}.ds-empty p{font-size:13px}}"
+    },
+    {
+      "name": "Experience disclosure",
+      "kind": "custom",
+      "refersTo": "experience-disclosure",
+      "description": "Native details row with a rotating plus affordance and secondary detail text.",
+      "html": "<details class=\"ds-role\"><summary class=\"ds-summary\"><div><p class=\"ds-date\">Sep 2022 - Feb 2023</p><h3>Engineering Intern</h3><p>Singapore Polytechnic</p></div><span class=\"ds-expand\"><svg aria-hidden=\"true\" width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 5v14M5 12h14\"/></svg></span></summary><div class=\"ds-details\">In-house internship in collaboration with Beckhoff Automation Pte Ltd.</div></details>",
+      "css": ".ds-role{font-family:Manrope,Arial,sans-serif;border-bottom:1px solid var(--line,#2c3850);color:var(--text,#e7ecf5)}.ds-summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:28px}.ds-summary::-webkit-details-marker{display:none}.ds-summary h3{margin:0;font-size:22px;line-height:1.25;font-weight:600;letter-spacing:-.02em}.ds-summary p{margin:6px 0 0;color:var(--muted,#a2aec2);font-size:14px;line-height:1.75}.ds-summary .ds-date{font-size:12px;margin:0 0 10px;font-variant-numeric:tabular-nums}.ds-expand{display:grid;place-items:center;width:44px;height:44px;flex-shrink:0;border-radius:50%;color:var(--accent,#a9befa);transition:transform var(--duration,.25s) var(--ease,cubic-bezier(.16,1,.3,1)),background var(--duration,.25s)}.ds-role[open] .ds-expand{transform:rotate(45deg)}.ds-summary:hover .ds-expand{background:var(--pill,#192640)}.ds-details{padding-bottom:26px;font-size:14px;line-height:1.75;color:var(--muted,#a2aec2);max-width:480px}.ds-primary:focus-visible,.ds-link:focus-visible,.ds-toggle:focus-visible,.ds-nav a:focus-visible,.ds-summary:focus-visible,.ds-motion:focus-visible{outline:2px solid var(--accent,#a9befa);outline-offset:5px}@media(max-width:767px){.ds-summary{padding-block:24px}.ds-summary h3{font-size:20px}}@media(prefers-reduced-motion:reduce){.ds-expand{transition:none}}"
+    },
+    {
+      "name": "Sky motion control",
+      "kind": "button",
+      "description": "Visible sky pause affordance; runtime updates its label, pressed state, and disabled reduced-motion state.",
+      "html": "<button class=\"ds-motion\" type=\"button\" aria-pressed=\"false\"><svg aria-hidden=\"true\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V6M14 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V6\"/></svg><span>Pause motion</span></button>",
+      "css": ".ds-motion{font-family:Manrope,Arial,sans-serif;display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:12px;line-height:1.75;color:var(--muted,#a2aec2);background:transparent;border:0;padding:8px 10px;border-radius:999px;cursor:pointer}.ds-motion svg{color:var(--accent,#a9befa)}.ds-motion:hover{background:var(--surface,#11192b);color:var(--text,#e7ecf5)}.ds-motion:disabled{cursor:default;opacity:.65}.ds-primary:focus-visible,.ds-link:focus-visible,.ds-toggle:focus-visible,.ds-nav a:focus-visible,.ds-summary:focus-visible,.ds-motion:focus-visible{outline:2px solid var(--accent,#a9befa);outline-offset:5px}@media(max-width:767px){.ds-motion{font-size:11px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Quiet Galaxy",
+    "overview": "Midnight surfaces, lunar text, and restrained periwinkle actions carry Clifton's chill, minimal personality. A sparse procedural sky and fine orbital geometry provide atmosphere while the content stays readable and mostly unboxed. The identity uses one type family, generous section spacing, and a small set of clear controls.\n\nThe first visit starts in dark mode. A manual theme control switches to the corresponding light palette and persists the visitor's choice. The shipped landscape photograph has been removed; the sky is native canvas and CSS geometry, with SVG files for interface icons.",
+    "keyCharacteristics": [
+      "Quiet blue atmosphere with a single action accent.",
+      "Self-hosted Manrope across headings, body, and controls.",
+      "Flat reading sections, fine dividers, and pill-shaped actions.",
+      "Decorative hero motion with pause and reduced-motion support.",
+      "Compact phone layouts with large interactive targets."
+    ],
+    "rules": [
+      {
+        "name": "The One Accent Rule",
+        "body": "Use the theme's existing blue accent for actions and emphasis; keep ordinary paragraphs in secondary text and headings in primary text.",
+        "section": "colors"
+      },
+      {
+        "name": "The Single Family Rule",
+        "body": "Carry hierarchy through Manrope's size, weight, tracking, and color; the shipped interface has no separate display or mono face.",
+        "section": "typography"
+      },
+      {
+        "name": "The Stationary Reading Rule",
+        "body": "About, projects, experience, and contact remain at rest; do not add scroll-triggered section entrances. The shipped correction removed reading-section reveal motion.",
+        "section": "layout"
+      },
+      {
+        "name": "The Tonal Depth Rule",
+        "body": "Separate content with the existing surface tones and fine lines; reserve the spherical gradient and orbital transparency for the native galaxy decoration.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use the matching dark or light token roles together when adding a control or surface.",
+      "Do retain self-hosted Manrope, open content sections, and fine dividers.",
+      "Do preserve the phone gutter steps and minimum touch heights when adding navigation or actions.",
+      "Do keep decorative sky motion pausable and honor reduced-motion preference.",
+      "Do use SVG interface icons and native canvas/CSS for the current galaxy atmosphere."
+    ],
+    "donts": [
+      "Don't add scroll-triggered entrances to the stationary reading sections.",
+      "Don't restore the removed landscape photograph to this galaxy interface.",
+      "Don't invent project cards, imagery, or evidence while the supplied project data is empty.",
+      "Don't add shadows or blur as a default treatment to these flat content surfaces."
+    ]
+  }
+}

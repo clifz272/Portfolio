@@ -15,21 +15,21 @@ The portfolio intentionally ships with no project details. Edit `dist/projects.j
 - `url` is an optional external HTTP(S) project link.
 - Missing images or links are omitted rather than replaced by fake work.
 
-All biographical content is in `dist/index.html`; theme and layout tokens are in `dist/styles.css`. Contact email is also used by the copy action in `dist/app.js`.
+All biographical content is in `dist/index.html`; theme and layout tokens are in `dist/galaxy.css`. Contact email is also used by the copy action in `dist/app.js`. The procedural starfield is implemented in `dist/galaxy.js`.
 
 ## Design
 
-Reading this as a personal engineering portfolio for recruiters and collaborators, with a calm, nature-inspired language. Native CSS implements the aesthetic rather than borrowing a product design system.
+The latest brief specifies a quiet galaxy theme, no landscape picture, and phone optimization. The portfolio uses native CSS and canvas, with guidance from the installed GitHub design skills UI/UX Pro Max and Impeccable.
 
-Design variance 6, motion intensity 4, visual density 3. Warm green neutrals, self-hosted Outfit typography, original landscape artwork, restrained entrances and scroll reveals. Dark mode respects system preference and has a persistent manual toggle. Reduced-motion preferences disable motion.
+Design variance 6, motion intensity 4, visual density 3. Midnight blue surfaces, lunar blue accents, self-hosted Manrope typography, and procedural stars and orbital geometry. The initial theme is dark; a persistent light-mode toggle is available. Animation stops under reduced-motion preferences, while the hero is offscreen, and while the tab is hidden. A persistent pause control is also available. Phone animation is capped at 24 frames per second with 48 stars and a pixel-ratio cap of 1.5. The canvas is decorative; all text and actions use accessible HTML.
 
 ## Sources and assets
 
 Personal details come from the supplied Clifton_Ng_Resume.docx. LinkedIn could not be read automatically; the portfolio links to the corrected `www.linkedin.com/in/cliftonnjh` URL. Home address and phone number are not displayed in page content. The supplied résumé is available as a DOCX download.
 
-Landscape: original artwork generated with the built-in ImageGen tool. Final website asset: `dist/assets/landscape.webp`. Generation prompt: a peaceful impressionist oil painting of a winding meadow path, sage and olive greenery, distant blue hills, billowing clouds, and afternoon light, with visible brush strokes and canvas texture; no text, people, logos, or watermarks. Full prompt retained in `artwork-prompt.txt`.
+There is no landscape image in the website. The galaxy background is rendered from code and requires no image download.
 
-Outfit font files are self-hosted from Google Fonts. License: SIL Open Font License, included under `dist/assets/OFL.txt`.
+Manrope is self-hosted from the Google Fonts repository. License: SIL Open Font License, included under `dist/assets/OFL.txt`. Icons come from the official Tabler Icons repository, with its MIT license under `dist/assets/icons/LICENSE`.
 
 ## Hosting
 

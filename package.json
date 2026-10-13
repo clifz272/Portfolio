@@ -5,6 +5,6 @@
   "description": "Clifton Ng's personal engineering portfolio",
   "scripts": {
     "dev": "node scripts/serve.mjs",
-    "check": "node --check dist/app.js"
+    "check": "node --check dist/app.js && node --check dist/galaxy.js"
   }
 }
