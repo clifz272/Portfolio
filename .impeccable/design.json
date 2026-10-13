@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-13T10:38:40.7595258Z",
+  "generatedAt": "2026-10-13T11:09:52.261Z",
   "title": "Design System: Clifton Ng — Quiet Galaxy",
   "extensions": {
     "colorMeta": {
@@ -447,7 +447,7 @@
       "kind": "button",
       "refersTo": "button-primary",
       "description": "Filled résumé/contact action; inherited CSS variables bind both shipped themes.",
-      "html": "<a class=\"ds-primary\" href=\"#resume\">Download résumé <svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2\"/><path d=\"M7 11l5 5 5-5M12 4v12\"/></svg></a>",
+      "html": "<a class=\"ds-primary\" href=\"#resume\">Download my resume <svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2\"/><path d=\"M7 11l5 5 5-5M12 4v12\"/></svg></a>",
       "css": ".ds-primary{font-family:Manrope,Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:23px;min-height:50px;padding:13px 23px;font-size:14px;line-height:1.5;font-weight:600;border-radius:999px;white-space:nowrap;text-decoration:none;background:var(--accent,#a9befa);color:var(--accent-text,#101b36);transition:background var(--duration,.25s),transform var(--duration,.25s) var(--ease,cubic-bezier(.16,1,.3,1))}.ds-primary:hover{background:var(--accent-hover,#c5d2ff);transform:translateY(-2px)}.ds-primary:active{transform:scale(.98)}.ds-primary:focus-visible,.ds-link:focus-visible,.ds-toggle:focus-visible,.ds-nav a:focus-visible,.ds-summary:focus-visible,.ds-motion:focus-visible{outline:2px solid var(--accent,#a9befa);outline-offset:5px}@media(max-width:767px){.ds-primary{font-size:13px;gap:17px;padding-inline:20px}}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
     },
     {
@@ -455,16 +455,16 @@
       "kind": "button",
       "refersTo": "text-link",
       "description": "Accent link with an underline on hover and a generous minimum target height.",
-      "html": "<a class=\"ds-link\" href=\"#projects\">View projects <svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M17 7 7 17M8 7h9v9\"/></svg></a>",
+      "html": "<a class=\"ds-link\" href=\"#projects\">Explore my projects <svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M17 7 7 17M8 7h9v9\"/></svg></a>",
       "css": ".ds-link{font-family:Manrope,Arial,sans-serif;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:6px 0;font-size:14px;line-height:1.5;color:var(--accent,#a9befa);text-decoration:underline;text-decoration-color:transparent;text-underline-offset:6px;transition:text-decoration-color .2s}.ds-link:hover{text-decoration-color:currentColor}.ds-primary:focus-visible,.ds-link:focus-visible,.ds-toggle:focus-visible,.ds-nav a:focus-visible,.ds-summary:focus-visible,.ds-motion:focus-visible{outline:2px solid var(--accent,#a9befa);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-link{transition:none}}"
     },
     {
       "name": "Theme control",
       "kind": "button",
       "refersTo": "theme-toggle",
-      "description": "Outlined pill; label names the destination mode. Persistence belongs to app.js.",
-      "html": "<button class=\"ds-toggle\" type=\"button\" aria-label=\"Switch to light mode\">Light mode</button>",
-      "css": ".ds-toggle{font-family:Manrope,Arial,sans-serif;min-height:44px;padding:8px 15px;font-size:12px;line-height:1.75;white-space:nowrap;background:transparent;color:var(--text,#e7ecf5);border:1px solid var(--line,#2c3850);border-radius:999px;cursor:pointer;transition:background var(--duration,.25s)}.ds-toggle:hover{background:var(--surface,#11192b)}.ds-primary:focus-visible,.ds-link:focus-visible,.ds-toggle:focus-visible,.ds-nav a:focus-visible,.ds-summary:focus-visible,.ds-motion:focus-visible{outline:2px solid var(--accent,#a9befa);outline-offset:5px}@media(max-width:767px){.ds-toggle{font-size:11px;padding-inline:12px}}@media(prefers-reduced-motion:reduce){.ds-toggle{transition:none}}"
+      "description": "Outlined sun/moon action; its label names the destination mode and becomes icon-only below 360px.",
+      "html": "<button class=\"ds-toggle\" type=\"button\" aria-label=\"Switch to light mode\"><svg aria-hidden=\"true\" width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5\"/></svg><span>Light mode</span></button>",
+      "css": ".ds-toggle{font-family:Manrope,Arial,sans-serif;min-height:44px;padding:8px 15px;font-size:12px;line-height:1.75;white-space:nowrap;background:transparent;color:var(--text,#e7ecf5);border:1px solid var(--line,#2c3850);border-radius:999px;cursor:pointer;transition:background var(--duration,.25s)}.ds-toggle:hover{background:var(--surface,#11192b)}.ds-primary:focus-visible,.ds-link:focus-visible,.ds-toggle:focus-visible,.ds-nav a:focus-visible,.ds-summary:focus-visible,.ds-motion:focus-visible{outline:2px solid var(--accent,#a9befa);outline-offset:5px}@media(max-width:767px){.ds-toggle{font-size:11px;padding-inline:12px}}@media(prefers-reduced-motion:reduce){.ds-toggle{transition:none}}.ds-toggle{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:44px}@media(max-width:359px){.ds-toggle span{display:none}}"
     },
     {
       "name": "Navigation",
@@ -508,9 +508,9 @@
     {
       "name": "Project story",
       "kind": "content",
-      "description": "An open project article with real summary, technology metadata, and separate detail and repository actions. Two columns on desktop, one on phones.",
-      "html": "<article class=\"ds-project\"><h3>SandScape-AR</h3><p class=\"ds-project-context\">CEG1010 team project</p><p>An augmented reality sandbox that turns depth-camera data into live terrain visuals.</p><ul><li>Python</li><li>OpenCV</li><li>NumPy</li><li>Raspberry Pi</li></ul><div class=\"ds-project-actions\"><button type=\"button\">Read project</button><a href=\"https://github.com/clifz272/SandScape-AR\">GitHub</a></div></article>",
-      "css": ".ds-project{font-family:Manrope,Arial,sans-serif;color:var(--text,#e7ecf5);padding-bottom:30px;border-bottom:1px solid var(--line,#2c3850)}.ds-project h3{font-size:23px;font-weight:600;line-height:1.35}.ds-project p{font-size:15px;line-height:1.75;color:var(--muted,#a2aec2)}.ds-project .ds-project-context{font-size:12px}.ds-project ul{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}.ds-project li{font-size:12px;padding:5px 13px;background:var(--pill,#192640);color:var(--accent,#a9befa);border-radius:999px}.ds-project-actions{display:flex;gap:24px;flex-wrap:wrap}.ds-project-actions a,.ds-project-actions button{min-height:44px;background:none;border:0;font:inherit;font-size:14px;color:var(--accent,#a9befa)}@media(max-width:767px){.ds-project h3{font-size:21px}}"
+      "description": "Open project article; outlined read action uses a horizontal arrow, while repository links remain separate external actions.",
+      "html": "<article class=\"ds-project\"><h3>SandScape-AR</h3><p class=\"ds-project-context\">CEG1010 team project</p><p>An augmented reality sandbox that turns depth-camera data into live terrain visuals.</p><ul><li>Python</li><li>OpenCV</li><li>NumPy</li><li>Raspberry Pi</li></ul><div class=\"ds-project-actions\"><button class=\"ds-project-read\" type=\"button\">Read project <svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M12 5l7 7-7 7\"/></svg></button><a href=\"https://github.com/clifz272/SandScape-AR\">GitHub</a></div></article>",
+      "css": ".ds-project{font-family:Manrope,Arial,sans-serif;color:var(--text,#e7ecf5);padding-bottom:30px;border-bottom:1px solid var(--line,#2c3850)}.ds-project h3{font-size:23px;font-weight:600;line-height:1.35}.ds-project p{font-size:15px;line-height:1.75;color:var(--muted,#a2aec2)}.ds-project .ds-project-context{font-size:12px}.ds-project ul{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}.ds-project li{font-size:12px;padding:5px 13px;background:var(--pill,#192640);color:var(--accent,#a9befa);border-radius:999px}.ds-project-actions{display:flex;gap:24px;flex-wrap:wrap}.ds-project-actions a,.ds-project-actions button{min-height:44px;background:none;border:0;font:inherit;font-size:14px;color:var(--accent,#a9befa)}@media(max-width:767px){.ds-project h3{font-size:21px}}.ds-project-actions .ds-project-read{display:inline-flex;align-items:center;gap:16px;min-height:44px;padding:10px 16px;border:1px solid var(--line,#2c3850);border-radius:999px;font-size:13px}.ds-project-read:focus-visible{outline:2px solid var(--accent,#a9befa);outline-offset:5px}.ds-project-read:active{transform:scale(.98)}@media(hover:hover) and (pointer:fine){.ds-project-read:hover{background:var(--pill,#192640)}}"
     }
   ],
   "narrative": {

@@ -28,4 +28,4 @@ The supplied Clifton_Ng_Resume.docx remains the downloadable résumé. The lates
 
 ## Open Decisions
 
-No new galaxy image was attached to the latest request or found in the workspace. The implementation will use a procedural starfield. Hosting stays owner-private until the user requests a different audience.
+No new galaxy image was attached to the latest request or found in the workspace. The implementation uses a procedural starfield. The user requested local-only updates on 13 October 2026; do not publish subsequent refinements unless requested. All four projects remain, including SandScape-AR. The visible download label uses plain "resume" without accents.

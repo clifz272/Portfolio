@@ -6,6 +6,8 @@ A lightweight, buildless portfolio with native HTML, CSS, and JavaScript. No dep
 
 Run `npm run dev` from this directory and open http://127.0.0.1:4173.
 
+Current refinements are local only. They add moving orbital satellites and an occasional shooting star, an animated phone menu, outlined project read actions, and previous/next navigation in project details. Keyboard actions stay immediate; decorative loops pause offscreen, when the tab is hidden, or when paused. The contact section shows the actual email address with copy feedback.
+
 ## Add projects later
 
 The portfolio currently features four projects from Clifton's master CV: SandScape-AR, Shuttle & Passenger Scheduling, Digital Clinic Accessibility Router, and Live Bus Data Integration (in progress). Edit `dist/projects.json` to add or update real projects. Entries support `title`, `summary`, `context`, `status`, `year`, `tags`, `image`, `imageAlt`, `details`, `contribution`, `highlights`, `url`, `sourceLabel`, and `sourceNote`. Only `title` is required.
@@ -13,6 +15,8 @@ The portfolio currently features four projects from Clifton's master CV: SandSca
 - Save project images under `dist/assets/` and reference them as `assets/your-image.webp`.
 - `details` opens an accessible project dialog. Paragraphs can be separated with newline characters.
 - `url` is an optional external HTTP(S) project link.
+- `media` adds visuals inside the project reader without adding image weight to the main gallery. Each item supports `src`, `label`, `alt`, `caption`, `width`, `height`, and optional `sourceUrl`. Use real screenshots when available and label concept imagery clearly. Visitors can switch visuals, open an image at full size, and follow its source link.
+- An item can use `assets` instead of `src` to show a small group of original repository images. Each asset supports `src`, `label`, `alt`, `width`, `height`, and `sourceUrl`; the Clinic's "Map assets" item is an example. Preserve attribution and avoid enlarging small textures into misleading project photos.
 - Missing images or links are omitted rather than replaced by fake work.
 
 All biographical content is in `dist/index.html`; theme and layout tokens are in `dist/galaxy.css`. Contact email is also used by the copy action in `dist/app.js`. The procedural starfield is implemented in `dist/galaxy.js`.
@@ -29,8 +33,10 @@ Personal and project details now use the "your master cv" tab of the supplied Go
 
 There is no landscape image in the website. The galaxy background is rendered from code and requires no image download.
 
-Manrope is self-hosted from the Google Fonts repository. License: SIL Open Font License, included under `dist/assets/OFL.txt`. Icons come from the official Tabler Icons repository, with its MIT license under `dist/assets/icons/LICENSE`.
+The Clinic reader now includes a screenshot captured from the original team app running locally, plus the repository's original blocked-terrain texture and stair graphic. Captions distinguish screenshots, generated route output, and concept illustrations. `PROJECT_MEDIA.md` records image provenance and `RESUME_WORK.md` records the current checkpoint and restart steps.
+
+Manrope is self-hosted from the Google Fonts repository. License: SIL Open Font License, included under `dist/assets/OFL.txt`. Most icons come from the official Tabler Icons repository, with its MIT license under `dist/assets/icons/LICENSE`. Local directional and check SVGs use matching two-pixel strokes.
 
 ## Hosting
 
-The Site identity and static publishing directory are tracked in `.openai/hosting.json`. Use the Sites workflow to update the existing Site; do not create a second Site for future edits.
+Current changes are local only at the user's request. When publication is explicitly requested, use the Sites workflow to update the existing Site identity in `.openai/hosting.json`; do not create a second Site.

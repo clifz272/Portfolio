@@ -4,6 +4,10 @@
     "context": "CEG1010 team project",
     "summary": "An augmented reality sandbox that turns depth-camera data into live elevation colours, contours, and water visuals projected onto reshaped sand.",
     "tags": ["Python", "OpenCV", "NumPy", "Raspberry Pi"],
+    "media": [
+      {"src": "assets/projects/sandscape-concept.webp", "label": "Illustration", "alt": "Concept illustration of a depth camera and projector above a sandbox with coloured topographic contours.", "caption": "Concept illustration of the depth-camera and terrain-projection setup.", "width": 1536, "height": 1024},
+      {"src": "assets/projects/sandscape-workflow.svg", "label": "Workflow", "alt": "Depth camera data passes through Python processing and terrain layers, then becomes a projected visual.", "caption": "Depth input becomes terrain layers before being projected back onto the sand.", "width": 900, "height": 600}
+    ],
     "details": "The sandbox combines an Intel RealSense D435i depth camera, Raspberry Pi 4, and a projector. Changes to the physical sand surface become a live topographic visualisation.",
     "contribution": "Co-developed the AR sandbox as part of a course team. The Python pipeline uses baseline calibration, noise filtering, and adaptive smoothing to stabilise the terrain visualisation.",
     "highlights": ["Depth-camera input from the Intel RealSense D435i", "Live elevation colours, contour lines, and water effects", "Baseline calibration and smoothing for stable projection"],
@@ -15,6 +19,10 @@
     "context": "INF1009, five-person team",
     "summary": "A modular C++ scheduling system that matches passengers to shuttles within seat limits and a 10-minute arrival window.",
     "tags": ["C++", "OOP", "SOLID", "Design patterns"],
+    "media": [
+      {"src": "assets/projects/shuttle-concept.webp", "label": "Illustration", "alt": "Concept illustration of a shuttle, passenger tokens, two stops, route lines, and a clock.", "caption": "Concept illustration of passenger matching, shuttle routes, and arrival timing.", "width": 1536, "height": 1024},
+      {"src": "assets/projects/shuttle-workflow.svg", "label": "Workflow", "alt": "Inputs are validated, a scheduling strategy is used, shuttles are assigned, and schedules are saved.", "caption": "A high-level workflow based on the project's scheduling and persistence responsibilities.", "width": 900, "height": 600}
+    ],
     "details": "Co-developed for SIT's Object-Oriented Programming course. The system uses SOLID principles and Strategy and Factory patterns to keep scheduling responsibilities modular.",
     "contribution": "Contributed console input and validators, file loading and saving helpers, schedule assignment and serialisation, shuttle-package validation, and strategy registration.",
     "highlights": ["Passenger matching within seat limits and a 10-minute arrival window", "Modular scheduling with Strategy and Factory patterns", "Input validation, persistence helpers, and schedule serialisation"],
@@ -27,6 +35,15 @@
     "context": "INF1008, six-person team",
     "summary": "An accessibility-routing prototype for a simulated neighbourhood, with multi-stop routes, sheltered paths in rain, and stair-free wheelchair routing.",
     "tags": ["Python", "Streamlit", "Dijkstra's algorithm", "Matplotlib"],
+    "media": [
+      {"src": "assets/projects/clinic-app-screenshot.webp", "label": "App screenshot", "alt": "The team's Streamlit app showing a route from A to B, with sheltered walkway and wheelchair preferences selected, a map legend, and the calculated route costs.", "caption": "The team's app running locally: an A to B route with rain and wheelchair preferences enabled.", "sourceUrl": "https://github.com/HZ-2502222/INF1008_P5_3/blob/e5ce91cefd3113b94fb8893e66f101b863f4aee0/app.py", "width": 1280, "height": 720},
+      {"src": "assets/projects/clinic-route-example.webp", "label": "Route example", "alt": "The team's neighbourhood map with a blue route from A to B and a red route from B to E.", "caption": "Example route A to B to E, rendered from the team's map and code with rain and wheelchair preferences enabled.", "sourceUrl": "https://github.com/HZ-2502222/INF1008_P5_3/blob/e5ce91cefd3113b94fb8893e66f101b863f4aee0/app.py", "width": 1344, "height": 765},
+      {"label": "Map assets", "caption": "Original images from the team repository, used to mark blocked terrain and stairs in the map.", "assets": [
+        {"src": "assets/projects/clinic-bush.png", "label": "Blocked terrain", "alt": "The green foliage texture used for blocked terrain in the Clinic map.", "sourceUrl": "https://github.com/HZ-2502222/INF1008_P5_3/blob/e5ce91cefd3113b94fb8893e66f101b863f4aee0/bush.png", "width": 169, "height": 152},
+        {"src": "assets/projects/clinic-stairs.png", "label": "Stairs", "alt": "The original brown stair graphic used for stair cells in the Clinic map.", "sourceUrl": "https://github.com/HZ-2502222/INF1008_P5_3/blob/e5ce91cefd3113b94fb8893e66f101b863f4aee0/stairs.png", "width": 512, "height": 512}
+      ]},
+      {"src": "assets/projects/clinic-workflow.svg", "label": "Workflow", "alt": "The map and route preferences become a graph, Dijkstra's algorithm finds the path, and a route map is shown.", "caption": "Accessibility preferences shape the graph used to calculate and visualise the route.", "width": 900, "height": 600}
+    ],
     "details": "Uses Dijkstra's algorithm and a heap-based priority queue to plan walking routes for elderly and wheelchair users in a simulated neighbourhood. The interface visualises the route and breaks down its cost.",
     "contribution": "Co-developed the prototype in a six-person team. The team validated routing, accessibility settings, and interface behaviour through nine test scenarios.",
     "highlights": ["Up to five sequential destinations", "Sheltered-route preferences in rain and stair-free wheelchair routing", "Animated maps and route-cost breakdowns"],
@@ -39,6 +56,10 @@
     "status": "In progress",
     "summary": "A Python application in development that retrieves live bus metrics from transport APIs and organises them using SQL and NoSQL storage.",
     "tags": ["Python", "SQL", "NoSQL", "Transport APIs"],
+    "media": [
+      {"src": "assets/projects/live-bus-concept.webp", "label": "Illustration", "alt": "Concept illustration of a bus sending data blocks into two database storage models.", "caption": "Concept illustration of transport data feeding a hybrid storage model. This project is in progress.", "width": 1536, "height": 1024},
+      {"src": "assets/projects/live-bus-workflow.svg", "label": "Planned flow", "alt": "Transport APIs feed a Python application, with branches to SQL and NoSQL storage.", "caption": "Planned API-to-storage flow, based on the current project scope.", "width": 900, "height": 600}
+    ],
     "details": "Developing a Python application that retrieves live bus metrics through external transport APIs. A hybrid SQL/NoSQL storage model is being used to organise and query the incoming data.",
     "contribution": "Developing the application and documenting API workflows and database schemas to track the system logic and support ongoing work.",
     "highlights": ["External transport API integration", "Hybrid SQL and NoSQL storage model", "API workflow and database schema documentation"]
