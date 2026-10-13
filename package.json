@@ -1,0 +1,10 @@
+{
+  "name": "clifton-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Clifton Ng's personal engineering portfolio",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "check": "node --check dist/app.js"
+  }
+}

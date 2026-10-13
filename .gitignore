@@ -1,0 +1,5 @@
+.sites-local/
+node_modules/
+.deploy/
+*.log
+
