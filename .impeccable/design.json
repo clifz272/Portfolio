@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-13T09:55:20.919Z",
+  "generatedAt": "2026-10-13T10:38:40.7595258Z",
   "title": "Design System: Clifton Ng — Quiet Galaxy",
   "extensions": {
     "colorMeta": {
@@ -504,6 +504,13 @@
       "description": "Visible sky pause affordance; runtime updates its label, pressed state, and disabled reduced-motion state.",
       "html": "<button class=\"ds-motion\" type=\"button\" aria-pressed=\"false\"><svg aria-hidden=\"true\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V6M14 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V6\"/></svg><span>Pause motion</span></button>",
       "css": ".ds-motion{font-family:Manrope,Arial,sans-serif;display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:12px;line-height:1.75;color:var(--muted,#a2aec2);background:transparent;border:0;padding:8px 10px;border-radius:999px;cursor:pointer}.ds-motion svg{color:var(--accent,#a9befa)}.ds-motion:hover{background:var(--surface,#11192b);color:var(--text,#e7ecf5)}.ds-motion:disabled{cursor:default;opacity:.65}.ds-primary:focus-visible,.ds-link:focus-visible,.ds-toggle:focus-visible,.ds-nav a:focus-visible,.ds-summary:focus-visible,.ds-motion:focus-visible{outline:2px solid var(--accent,#a9befa);outline-offset:5px}@media(max-width:767px){.ds-motion{font-size:11px}}"
+    },
+    {
+      "name": "Project story",
+      "kind": "content",
+      "description": "An open project article with real summary, technology metadata, and separate detail and repository actions. Two columns on desktop, one on phones.",
+      "html": "<article class=\"ds-project\"><h3>SandScape-AR</h3><p class=\"ds-project-context\">CEG1010 team project</p><p>An augmented reality sandbox that turns depth-camera data into live terrain visuals.</p><ul><li>Python</li><li>OpenCV</li><li>NumPy</li><li>Raspberry Pi</li></ul><div class=\"ds-project-actions\"><button type=\"button\">Read project</button><a href=\"https://github.com/clifz272/SandScape-AR\">GitHub</a></div></article>",
+      "css": ".ds-project{font-family:Manrope,Arial,sans-serif;color:var(--text,#e7ecf5);padding-bottom:30px;border-bottom:1px solid var(--line,#2c3850)}.ds-project h3{font-size:23px;font-weight:600;line-height:1.35}.ds-project p{font-size:15px;line-height:1.75;color:var(--muted,#a2aec2)}.ds-project .ds-project-context{font-size:12px}.ds-project ul{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}.ds-project li{font-size:12px;padding:5px 13px;background:var(--pill,#192640);color:var(--accent,#a9befa);border-radius:999px}.ds-project-actions{display:flex;gap:24px;flex-wrap:wrap}.ds-project-actions a,.ds-project-actions button{min-height:44px;background:none;border:0;font:inherit;font-size:14px;color:var(--accent,#a9befa)}@media(max-width:767px){.ds-project h3{font-size:21px}}"
     }
   ],
   "narrative": {

@@ -41,7 +41,7 @@ if ('IntersectionObserver' in window) {
   document.querySelectorAll('main section').forEach(section => sectionObserver.observe(section));
 }
 
-const email = '2503193@sit.singaporetech.edu.sg';
+const email = 'cliftonnjh@gmail.com';
 const copyButton = document.querySelector('.copy-email');
 const copyStatus = document.querySelector('.copy-status');
 let copyTimer;
@@ -56,7 +56,7 @@ copyButton.addEventListener('click', async () => {
   copyTimer = setTimeout(() => { copyStatus.textContent = ''; }, 6000);
 });
 
-// Project data is intentionally empty until Clifton supplies real details.
+// Project stories are stored separately so Clifton can keep adding to them.
 const projectArea = document.querySelector('#projects-content');
 const projectDialog = document.querySelector('#project-dialog');
 const dialogContent = document.querySelector('#project-dialog-content');
@@ -87,15 +87,39 @@ function projectImage(project) {
   image.className = 'project-image'; image.src = url; image.alt = project.imageAlt || `${project.title} project`; image.loading = 'lazy'; image.width = 900; image.height = 600;
   return image;
 }
+function projectSource(project) {
+  const url = safeUrl(project.url);
+  if (!url) return null;
+  const link = textElement('a', 'text-link', project.sourceLabel || 'Visit project');
+  link.append(actionIcon()); link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer';
+  link.setAttribute('aria-label', `${project.sourceLabel || 'Visit project'}: ${project.title}`);
+  return link;
+}
+function projectSection(title, text) {
+  const section = document.createElement('section'); section.className = 'project-detail-section';
+  section.append(textElement('h3', '', title), textElement('p', '', text));
+  return section;
+}
 function openProject(project) {
   dialogContent.replaceChildren();
   const title = textElement('h2', '', project.title); title.id = 'project-dialog-title'; dialogContent.append(title);
   const image = projectImage(project); if (image) dialogContent.append(image);
-  if (project.summary) dialogContent.append(textElement('p', '', project.summary));
-  if (project.details) dialogContent.append(textElement('p', '', project.details));
-  const url = safeUrl(project.url);
-  if (url) { const link = textElement('a', 'button primary', 'Visit project'); link.append(actionIcon()); link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer'; dialogContent.append(link); }
+  if (project.context) dialogContent.append(textElement('p', 'project-context', project.context));
+  if (project.status) dialogContent.append(textElement('p', 'project-status', project.status));
+  if (project.details) dialogContent.append(projectSection('The project', project.details));
+  else if (project.summary) dialogContent.append(textElement('p', '', project.summary));
+  if (project.contribution) dialogContent.append(projectSection('My contribution', project.contribution));
+  if (Array.isArray(project.highlights) && project.highlights.length) {
+    const section = document.createElement('section'); section.className = 'project-detail-section';
+    section.append(textElement('h3', '', 'What it includes'));
+    const list = document.createElement('ul');
+    project.highlights.forEach(item => list.append(textElement('li', '', String(item))));
+    section.append(list); dialogContent.append(section);
+  }
+  const source = projectSource(project); if (source) dialogContent.append(source);
+  if (project.sourceNote) dialogContent.append(textElement('p', 'project-source-note', project.sourceNote));
   projectDialog.showModal();
+  projectDialog.scrollTop = 0;
 }
 document.querySelector('.dialog-close').addEventListener('click', () => projectDialog.close());
 projectDialog.addEventListener('click', event => { if (event.target === projectDialog) { const rect = projectDialog.getBoundingClientRect(); if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) projectDialog.close(); } });
@@ -112,12 +136,16 @@ async function loadProjects() {
       const card = document.createElement('article'); card.className = 'project-card';
       const image = projectImage(project); if (image) card.append(image);
       const heading = document.createElement('div'); heading.className = 'project-heading'; heading.append(textElement('h3', '', project.title));
-      if (project.year) heading.append(textElement('p', 'date', String(project.year))); card.append(heading);
+      if (project.status) heading.append(textElement('p', 'project-status', project.status));
+      else if (project.year) heading.append(textElement('p', 'date', String(project.year))); card.append(heading);
+      if (project.context) card.append(textElement('p', 'project-context', project.context));
       if (project.summary) card.append(textElement('p', '', project.summary));
       if (Array.isArray(project.tags)) { const tags = document.createElement('ul'); tags.className = 'project-tags'; tags.setAttribute('aria-label', 'Technologies used'); project.tags.forEach(tag => tags.append(textElement('li', '', String(tag)))); card.append(tags); }
-      const url = safeUrl(project.url);
-      if (project.details) { const button = textElement('button', 'text-link', 'Read project'); button.append(actionIcon()); button.type = 'button'; button.addEventListener('click', () => openProject(project)); card.append(button); }
-      else if (url) { const link = textElement('a', 'text-link', 'Visit project'); link.append(actionIcon()); link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer'; card.append(link); }
+      const actions = document.createElement('div'); actions.className = 'project-actions';
+      if (project.details) { const button = textElement('button', 'text-link', 'Read project'); button.append(actionIcon()); button.type = 'button'; button.setAttribute('aria-label', `Read about ${project.title}`); button.addEventListener('click', () => openProject(project)); actions.append(button); }
+      const source = projectSource(project); if (source) actions.append(source);
+      if (actions.childElementCount) card.append(actions);
+      if (project.sourceNote) card.append(textElement('p', 'project-source-note', project.sourceNote));
       grid.append(card);
     }
     projectArea.replaceChildren(grid);

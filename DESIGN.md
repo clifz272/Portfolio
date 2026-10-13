@@ -200,13 +200,13 @@ The header is sticky, opaque, and accounts for the top safe-area inset. Its navi
 
 ## Elevation & Depth
 
-The interface uses no box shadows. Depth comes from paper-to-surface tonal changes, a thin divider system, faint orbital outlines, and a radial gradient inside the decorative planet. The sticky header is opaque; there is no backdrop blur. The dormant project dialog uses a dark translucent backdrop rather than a shadow.
+The interface uses no box shadows. Depth comes from paper-to-surface tonal changes, a thin divider system, faint orbital outlines, and a radial gradient inside the decorative planet. The sticky header is opaque; there is no backdrop blur. The project dialog uses a dark translucent backdrop rather than a shadow.
 
 **The Tonal Depth Rule.** Separate content with the existing surface tones and fine lines; reserve the spherical gradient and orbital transparency for the native galaxy decoration.
 
 ## Shapes
 
-Buttons, theme controls, skill chips, and dialog close controls use full pill curves. Empty projects and the dormant project dialog use the surface radius. The monogram, satellites, disclosure affordance, and planet use circles. Orbital ellipses are thin outlined circles transformed in CSS. Reading sections and experience rows retain open rectangular space with straight dividers.
+Buttons, theme controls, skill chips, and dialog close controls use full pill curves. The project empty state and project dialog use the surface radius. The monogram, satellites, disclosure affordance, and planet use circles. Orbital ellipses are thin outlined circles transformed in CSS. Reading sections and experience rows retain open rectangular space with straight dividers.
 
 ## Components
 
@@ -226,7 +226,13 @@ Navigation links use muted text at rest, primary text on hover or current locati
 
 Skill chips are static metadata pills with pill-tone backgrounds, accent text, and (5px 13px) padding. They wrap with an (8px) gap.
 
-The project empty state is a flat tonal panel, padded (35px), with a (180px) minimum height. Phones reduce it to (26px) padding and (155px) minimum height. Projects are intentionally empty; dormant project-card and dialog code does not establish a populated-gallery visual precedent.
+The project empty state is a flat tonal fallback panel, padded (35px), with a (180px) minimum height. Phones reduce it to (26px) padding and (155px) minimum height.
+
+### Project stories
+
+The populated gallery uses two open columns on desktop and one on phones. Articles have a bottom divider, no enclosing card fill, and wrap their technology pills. Titles use (23px) desktop and (21px) phone type; context and meaningful status use (12px) metadata. Summaries use (15px) body type. Read actions and verified repository links have (44px) touch height. Source availability notes sit below actions. In-progress status uses the existing accent; no progress percentage is invented.
+
+The native dialog separates project scope, personal contribution, and highlights. It uses the existing paper and line tokens, (16px) radius, and a maximum height of (85dvh). The close control remains sticky (16px) from the top while long details scroll. Escape closes it and focus returns to the originating read action.
 
 ### Experience disclosures
 
@@ -254,5 +260,5 @@ The visible sky control has a (44px) minimum height and labels Pause motion, Res
 
 - **Don't** add scroll-triggered entrances to the stationary reading sections.
 - **Don't** restore the removed landscape photograph to this galaxy interface.
-- **Don't** invent project cards, imagery, or evidence while the supplied project data is empty.
+- **Don't** invent project imagery, contributions, repositories, or completion claims. Label work in progress and source uploads honestly.
 - **Don't** add shadows or blur as a default treatment to these flat content surfaces.

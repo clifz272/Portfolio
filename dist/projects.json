@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "title": "SandScape-AR",
+    "context": "CEG1010 team project",
+    "summary": "An augmented reality sandbox that turns depth-camera data into live elevation colours, contours, and water visuals projected onto reshaped sand.",
+    "tags": ["Python", "OpenCV", "NumPy", "Raspberry Pi"],
+    "details": "The sandbox combines an Intel RealSense D435i depth camera, Raspberry Pi 4, and a projector. Changes to the physical sand surface become a live topographic visualisation.",
+    "contribution": "Co-developed the AR sandbox as part of a course team. The Python pipeline uses baseline calibration, noise filtering, and adaptive smoothing to stabilise the terrain visualisation.",
+    "highlights": ["Depth-camera input from the Intel RealSense D435i", "Live elevation colours, contour lines, and water effects", "Baseline calibration and smoothing for stable projection"],
+    "url": "https://github.com/clifz272/SandScape-AR",
+    "sourceLabel": "GitHub"
+  },
+  {
+    "title": "Shuttle & Passenger Scheduling",
+    "context": "INF1009, five-person team",
+    "summary": "A modular C++ scheduling system that matches passengers to shuttles within seat limits and a 10-minute arrival window.",
+    "tags": ["C++", "OOP", "SOLID", "Design patterns"],
+    "details": "Co-developed for SIT's Object-Oriented Programming course. The system uses SOLID principles and Strategy and Factory patterns to keep scheduling responsibilities modular.",
+    "contribution": "Contributed console input and validators, file loading and saving helpers, schedule assignment and serialisation, shuttle-package validation, and strategy registration.",
+    "highlights": ["Passenger matching within seat limits and a 10-minute arrival window", "Modular scheduling with Strategy and Factory patterns", "Input validation, persistence helpers, and schedule serialisation"],
+    "url": "https://github.com/clifz272/Shuttle-And-Passenger-Scheduling-System",
+    "sourceLabel": "GitHub",
+    "sourceNote": "Source upload pending."
+  },
+  {
+    "title": "Digital Clinic Accessibility Router",
+    "context": "INF1008, six-person team",
+    "summary": "An accessibility-routing prototype for a simulated neighbourhood, with multi-stop routes, sheltered paths in rain, and stair-free wheelchair routing.",
+    "tags": ["Python", "Streamlit", "Dijkstra's algorithm", "Matplotlib"],
+    "details": "Uses Dijkstra's algorithm and a heap-based priority queue to plan walking routes for elderly and wheelchair users in a simulated neighbourhood. The interface visualises the route and breaks down its cost.",
+    "contribution": "Co-developed the prototype in a six-person team. The team validated routing, accessibility settings, and interface behaviour through nine test scenarios.",
+    "highlights": ["Up to five sequential destinations", "Sheltered-route preferences in rain and stair-free wheelchair routing", "Animated maps and route-cost breakdowns"],
+    "url": "https://github.com/HZ-2502222/INF1008_P5_3",
+    "sourceLabel": "Team GitHub"
+  },
+  {
+    "title": "Live Bus Data Integration",
+    "context": "Academic project",
+    "status": "In progress",
+    "summary": "A Python application in development that retrieves live bus metrics from transport APIs and organises them using SQL and NoSQL storage.",
+    "tags": ["Python", "SQL", "NoSQL", "Transport APIs"],
+    "details": "Developing a Python application that retrieves live bus metrics through external transport APIs. A hybrid SQL/NoSQL storage model is being used to organise and query the incoming data.",
+    "contribution": "Developing the application and documenting API workflows and database schemas to track the system logic and support ongoing work.",
+    "highlights": ["External transport API integration", "Hybrid SQL and NoSQL storage model", "API workflow and database schema documentation"]
+  }
+]

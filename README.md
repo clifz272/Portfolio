@@ -8,7 +8,7 @@ Run `npm run dev` from this directory and open http://127.0.0.1:4173.
 
 ## Add projects later
 
-The portfolio intentionally ships with no project details. Edit `dist/projects.json` to add real projects. Each entry supports `title`, `summary`, `year`, `tags`, `image`, `imageAlt`, `details`, and `url`. Only `title` is required. Keep the array empty until real content is available.
+The portfolio currently features four projects from Clifton's master CV: SandScape-AR, Shuttle & Passenger Scheduling, Digital Clinic Accessibility Router, and Live Bus Data Integration (in progress). Edit `dist/projects.json` to add or update real projects. Entries support `title`, `summary`, `context`, `status`, `year`, `tags`, `image`, `imageAlt`, `details`, `contribution`, `highlights`, `url`, `sourceLabel`, and `sourceNote`. Only `title` is required.
 
 - Save project images under `dist/assets/` and reference them as `assets/your-image.webp`.
 - `details` opens an accessible project dialog. Paragraphs can be separated with newline characters.
@@ -25,7 +25,7 @@ Design variance 6, motion intensity 4, visual density 3. Midnight blue surfaces,
 
 ## Sources and assets
 
-Personal details come from the supplied Clifton_Ng_Resume.docx. LinkedIn could not be read automatically; the portfolio links to the corrected `www.linkedin.com/in/cliftonnjh` URL. Home address and phone number are not displayed in page content. The supplied résumé is available as a DOCX download.
+Personal and project details now use the "your master cv" tab of the supplied Google Doc (document ID `1Yu3BG76X1x9_KCbS7MvpiJHMAuyoPUIcx9YIkUd2Enk`), plus verified GitHub project documentation. The separate job-description tab is not Clifton's experience and is excluded. Project source notes are in `PROJECT_SOURCES.md`. The original supplied Clifton_Ng_Resume.docx remains the downloadable file. Home address and phone number are not displayed in page content. Current contact email is `cliftonnjh@gmail.com`.
 
 There is no landscape image in the website. The galaxy background is rendered from code and requires no image download.
 

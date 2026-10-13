@@ -74,6 +74,7 @@ h4{font-size:16px;letter-spacing:-.01em}
 .skills>h3{margin-bottom:16px}
 .skills ul,.project-tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
 .skills li,.project-tags li{background:var(--pill);color:var(--accent);padding:5px 13px;border-radius:999px;font-size:12px}
+.certification{margin-top:27px}.certification h3{font-size:16px;margin-bottom:10px}.certification p{font-size:14px}.certification p span{margin-left:7px}
 .projects-section{border-block:1px solid var(--line);padding-block:80px 88px}
 .section-intro>p{margin-top:18px;color:var(--muted);max-width:550px;font-size:15px}
 .projects-empty{margin-top:35px;min-height:180px;padding:35px;display:flex;align-items:center;border-radius:16px;background:var(--surface)}
@@ -105,19 +106,25 @@ summary:hover .expand-mark{background:var(--pill)}
 .footer-name{display:flex;align-items:center;min-height:44px;font-size:14px;font-weight:600}
 .footer p{color:var(--muted)}
 .footer .text-link{font-size:12px}
-.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:38px;margin-top:38px}
+.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:45px 65px;margin-top:45px}
+.project-card{min-width:0;display:flex;flex-direction:column;padding-bottom:30px;border-bottom:1px solid var(--line)}
 .project-image{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:16px;display:block;background:var(--surface);margin-bottom:22px}
 .project-heading{display:flex;justify-content:space-between;align-items:start;gap:18px}
 .project-card p{color:var(--muted);margin-block:12px 18px}
 .project-card .project-tags{margin-bottom:18px}
 .project-card .date{font-size:12px;white-space:nowrap;margin:5px 0}
+.project-card .project-context{font-size:12px;margin:9px 0 0}.project-card .project-status,.project-status{font-size:12px;color:var(--accent);white-space:nowrap;margin:5px 0;flex-shrink:0}
+.project-heading h3{font-size:23px;line-height:1.35}.project-card>p:not(.project-context):not(.project-source-note){font-size:15px}
+.project-actions{display:flex;gap:24px;flex-wrap:wrap;margin-top:auto}.project-card .project-source-note,.project-source-note{font-size:12px;color:var(--muted);margin:7px 0 0}
+.footer-socials{display:flex;gap:24px;align-items:center}
 dialog{background:var(--paper);color:var(--text);border:1px solid var(--line);border-radius:16px;width:min(740px,calc(100% - 32px));max-height:85dvh;padding:0}
 dialog::backdrop{background:rgba(5,10,24,.75)}
 .dialog-inner{padding:36px}
-.dialog-close{display:flex;align-items:center;gap:10px;min-height:44px;margin-left:auto;margin-bottom:26px;background:var(--pill);border-radius:999px;padding:9px 16px;font-size:13px}
+.dialog-close{position:sticky;top:16px;z-index:1;display:flex;align-items:center;gap:10px;min-height:44px;margin-left:auto;margin-bottom:26px;background:var(--pill);border-radius:999px;padding:9px 16px;font-size:13px}
 .dialog-inner h2{font-size:32px;margin-bottom:20px}
 .dialog-inner p{color:var(--muted);margin-bottom:18px;white-space:pre-line}
 .dialog-inner .project-image{margin-top:24px}
+.project-detail-section{margin-block:25px}.project-detail-section h3{font-size:17px;margin-bottom:12px}.project-detail-section p{font-size:14px;line-height:1.85}.project-detail-section ul{padding-left:20px;color:var(--muted);font-size:14px}.project-detail-section li+li{margin-top:8px}
 @media(prefers-reduced-motion:no-preference){
   .hero-heading{animation:settle .8s var(--ease) both}.hero-introduction{animation:settle .9s var(--ease) both}
   .orbit-system{animation:orbit-drift 60s linear infinite}
@@ -133,6 +140,7 @@ dialog::backdrop{background:rgba(5,10,24,.75)}
   .section{padding-block:68px}.about,.experience{grid-template-columns:1fr;gap:42px}.about-copy>p{margin-top:22px}.about-background{padding-top:0}.education{display:grid;grid-template-columns:1fr 1fr;gap:20px}.education>h3{grid-column:1/-1;margin-bottom:0}.education article+article{margin:0}.education h4{font-size:15px}.education article>p:not(.date){font-size:13px}.skills{margin-top:28px}h2{font-size:31px;line-height:1.25}.projects-section{padding-block:62px}.projects-empty{margin-top:28px;min-height:155px;padding:26px}.projects-empty h3{font-size:17px}.projects-empty p{font-size:13px}.experience-intro h2 br{display:none}.experience-intro>p{max-width:440px;margin-top:18px}.experience-intro>.disclosure-hint{margin-top:18px}.journey summary{padding-block:24px}.journey summary h3{font-size:20px}.contact{flex-direction:column;align-items:flex-start;gap:30px;padding-block:60px}.contact h2{font-size:32px}.contact-actions{align-items:flex-start;gap:10px}.copy-status{position:static;min-height:20px;margin-top:-5px;white-space:normal;word-break:break-word}.footer{flex-wrap:wrap;gap:6px 16px;padding-block:20px}.footer p{order:3;width:100%}.project-grid{grid-template-columns:1fr;gap:40px}.dialog-inner{padding:24px}
 }
 @media(max-width:389px){.container{width:calc(100% - 32px)}.navigation-actions{gap:8px}.brand{gap:8px;font-size:13px}.theme-toggle{padding-inline:10px}.hero-actions{gap:14px}.hero-actions .button{padding-inline:17px;gap:12px}.hero-actions .icon{width:18px;height:18px}.education{grid-template-columns:1fr}.education>h3{margin-bottom:0}.contact h2{font-size:29px}}
+@media(max-width:767px){.project-grid{gap:34px;margin-top:34px}.project-heading h3{font-size:21px}.project-actions{gap:22px}.project-card .project-status{font-size:11px}.footer-socials{gap:18px}.dialog-inner h2{font-size:26px}.dialog-inner .project-status{margin-bottom:18px}}
 @media(max-height:520px) and (max-width:900px){.hero{min-height:450px;padding-top:45px;padding-bottom:85px}.orbit-system{top:50%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1!important;transform:none!important}}
 @media print{.header,#starfield,.orbit-system,.hero-actions,.motion-control,.contact-section,.footer{display:none}.section{padding-block:30px}.hero{padding:0;min-height:0}.reveal{opacity:1!important;transform:none!important}body{background:#f2f5fb;color:#182640}}
